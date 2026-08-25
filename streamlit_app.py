@@ -209,4 +209,10 @@ if not st.session_state.documents:
     st.markdown("""
     ## ✨ Features
     - 📄 **PDF Upload**: Extract text from your PDF documents
-    - 🤖 **AI Chat**: Ask questions about 
+    - 🤖 **AI Chat**: Ask questions about your documents  
+    - 📝 **Summaries**: Get quick summaries of your content
+    - 🎯 **Key Points**: Extract important information automatically
+    """)
+
+st.markdown("---")
+st.markdown("Made with ❤️ using Streamlit • StudyFlow v1.0")
