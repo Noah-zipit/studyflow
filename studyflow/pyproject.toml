@@ -1,0 +1,50 @@
+[project]
+name = "studyflow"
+version = "1.0.0"
+description = "AI-powered PDF study assistant with RAG capabilities"
+authors = [
+    {name = "StudyFlow Team", email = "team@studyflow.ai"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "fastapi>=0.104.1",
+    "uvicorn[standard]>=0.24.0",
+    "langchain>=0.1.0",
+    "chromadb>=0.4.22",
+    "sentence-transformers>=2.2.2",
+    "openai>=1.6.1",
+    "pypdf>=3.17.4",
+    "pydantic>=2.5.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.3",
+    "pytest-asyncio>=0.21.1",
+    "black>=23.11.0",
+    "isort>=5.12.0",
+    "flake8>=6.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
