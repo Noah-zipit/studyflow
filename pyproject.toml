@@ -3,7 +3,7 @@ name = "studyflow"
 version = "1.0.0"
 description = "AI-powered PDF study assistant with RAG capabilities"
 authors = [
-    {name = "StudyFlow Team", email = "team@studyflow.ai"}
+    {name = "Ashar Qaisar", email = "noahext994@gmail.com"}
 ]
 license = {text = "MIT"}
 readme = "README.md"
