@@ -6,6 +6,7 @@ authors = [
     {name = "Ashar Qaisar", email = "noahext994@gmail.com"}
 ]
 license = {text = "MIT"}
+keywords = ["study-assistant", "rag", "pdf", "fastapi", "langchain", "streamlit"]
 readme = "README.md"
 requires-python = ">=3.11"
 
