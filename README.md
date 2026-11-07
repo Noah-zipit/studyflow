@@ -23,7 +23,7 @@ StudyFlow is an AI-powered PDF study assistant that helps you understand and lea
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Noah-zipit/studyflow.git
    cd studyflow
 Set up environment
 
