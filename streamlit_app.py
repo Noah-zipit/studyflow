@@ -1,6 +1,6 @@
 import streamlit as st
 import openai
-import PyPDF2
+import pypdf
 import io
 import requests
 
@@ -58,7 +58,7 @@ with st.sidebar:
                     status_text.text(f"Processing {file.name}...")
                     
                     # Extract text from PDF
-                    pdf_reader = PyPDF2.PdfReader(io.BytesIO(file.read()))
+                    pdf_reader = pypdf.PdfReader(io.BytesIO(file.read()))
                     text = ""
                     
                     for page_num, page in enumerate(pdf_reader.pages):
